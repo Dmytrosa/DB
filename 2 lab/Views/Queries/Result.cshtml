@@ -1,0 +1,227 @@
+﻿@model Query
+
+@{
+    ViewData["Title"] = "Результат";
+}
+
+<h1>Результат</h1>
+<hr />
+
+@if (string.IsNullOrEmpty(Model.Error))
+{
+    if (Model.QueryId.Equals("S1"))
+    {
+        <p style="font-size:20px">
+            <b>Імена усіх фармацевтів, з якими працює травник з ім'ям @Model.HerbalistName</b>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Ім'я
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < Model.PoisonersNames.Count; i++)
+                {
+                    <tr>
+                        <td>
+                            @Model.PoisonersNames[i]
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else if (Model.QueryId.Equals("S2"))
+    {
+        <p style="font-size:20px">
+            <b>Імена усіх фармацевтів зілля @Model.PoisonName, рік народження яких більше @Model.BirthDate</b>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Ім'я
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < Model.PoisonersNames.Count; i++)
+                {
+                    <tr>
+                        <td>
+                            @Model.PoisonersNames[i]
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else if (Model.QueryId.Equals("S3"))
+    {
+        <p style="font-size:20px">
+            <b>Імена усіх фармацевтів зілля, у яких кількість зілля більша ніж @Model.CountOfPoisons</b>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Ім'я
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < Model.PoisonersNames.Count; i++)
+                {
+                    <tr>
+                        <td>
+                            @Model.PoisonersNames[i]
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else if (Model.QueryId.Equals("S4"))
+    {
+        <p style="font-size:20px">
+            <b>Імена усіх фармацевтів, які не належать до зілля @Model.PoisonName</b>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Ім'я
+                    </th>
+                    <th>
+                        Рік
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < Model.PoisonersNames.Count; i++)
+                {
+                    <tr>
+                        <td>
+                            @Model.PoisonersNames[i]
+                        </td>
+                        <td>
+                            @Model.PoisonersBirthDates[i]
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else if (Model.QueryId.Equals("S5"))
+    {
+        <p style="font-size:20px">
+            <b>Назви усіх адрес фармацевтів зілля @Model.PoisonName</b>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Ім'я
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < Model.AddressesNames.Count; i++)
+                {
+                    <tr>
+                        <td>
+                            @Model.AddressesNames[i]
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else if (Model.QueryId.Equals("M1"))
+    {
+        <p style="font-size:20px">
+            <b>Імена усіх травників, які працюють принаймні з тими фармацевтами, що і травник @Model.HerbalistName</b>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Ім'я
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < Model.HerbalistsNames.Count; i++)
+                {
+                    <tr>
+                        <td>
+                            @Model.HerbalistsNames[i]
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else if (Model.QueryId.Equals("M2"))
+    {
+        <p style="font-size:20px">
+            <b>Імена фармацевтів, що тільки ті й ті зілля, що й фармацевт @Model.PoisonerName</b>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Ім'я
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < Model.PoisonersNames.Count; i++)
+                {
+                    <tr>
+                        <td>
+                            @Model.PoisonersNames[i]
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else if (Model.QueryId.Equals("M3"))
+    {
+        <p style="font-size:20px">
+            <b>Назви зілля, до яких належать всі фармацевти @Model.BirthDate року</b>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Ім'я
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < Model.PoisonsNames.Count; i++)
+                {
+                    <tr>
+                        <td>
+                            @Model.PoisonsNames[i]
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+}
+else
+{
+    <p style="font-size:20px">
+        @Model.Error
+    </p>
+}
+<form method="get" asp-controller="Queries" asp-action="Index">
+    <input type="submit" class="btn btn-outline-secondary" value="Назад до запитів" />
+</form>

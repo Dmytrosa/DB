@@ -1,0 +1,227 @@
+﻿@model DB_lab2.Models.Query
+@{
+    ViewData["Title"] = "Запити";
+}
+
+<style>
+body {
+   
+  background-image: url("https://www.significadofacil.com/wp-content/uploads/2019/07/background-1200x800.jpg");
+}
+
+ .top-text { line-height: 2; color: #ffb703; font-family: Copperplate, Papyrus, fantasy, serif; font-size: xx-large;}
+ .table{color: #8ecae6;}
+ .table-header{color:#fb8500}
+</style>
+
+<h1 class="top-text">Запити</h1>
+<hr />
+
+<h3 class="top-text">Прості</h3>
+<hr />
+
+<p style="font-size:20px">
+    <b class="table-header">Запит 1</b>
+</p>
+<p class="table" style="font-size:17px">
+    Знайти імена усіх фармацевтів, з якими працює травник із заданим ім'ям.
+</p>
+<div class="row">
+    <div class="col-md-4">
+        
+        <form asp-action="Simple_Query">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="BirthDate" value="2012" />
+            <input type="hidden" asp-for="CountOfPoisons" value="1" />
+            <div class="form-group">
+                <label class="control-label">Ім'я травника</label>
+                <select asp-for="HerbalistName" asp-items="@ViewBag.HerbalistsList" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Знайти" class="btn btn-outline-secondary" />
+            </div>
+        </form>
+    </div>
+</div>
+<hr />
+<p style="font-size:20px">
+    <b class="table-header">Запит 2</b>
+</p>
+<p class="table" style="font-size:17px">
+    Знайти імена усіх фармацевтів з заданими зіллями, рік народження яких більше заданого.
+</p>
+<div class="row">
+    <div class="col-md-4">
+        
+        <form asp-action="Simple_Query2">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="CountOfPoisons" value="1" />
+            <div class="form-group">
+                <label class="control-label">Ім'я зілля</label>
+                <select asp-for="PoisonName" asp-items="@ViewBag.PoisonsList" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="BirthDate" class="control-label"></label>
+                <input asp-for="BirthDate" class="form-control" />
+               @* <span class="text-danger">@ViewBag.Error1</span>*@
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Знайти" class="btn btn-outline-secondary" />
+            </div>
+        </form>
+    </div>
+</div>
+<hr />
+
+<p style="font-size:20px">
+    <b class="table-header">Запит 3</b>
+</p>
+<p class="table" style="font-size:17px">
+    Знайти імена усіх фармацевтів, у яких кількість зілля більша заданої.
+</p>
+<div class="row">
+    <div class="col-md-4">
+        
+        <form asp-action="Simple_Query3">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="BirthDate" value="2001" />
+
+            <div class="form-group">
+                <label class="control-label">Кількість зілля</label>
+                <input asp-for="CountOfPoisons" class="form-control" />
+                <span asp-validation-for="CountOfPoisons" class="text-danger"></span>
+                <span class="text-danger">@ViewBag.Error2</span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Знайти" class="btn btn-outline-secondary" />
+            </div>
+        </form>
+    </div>
+</div>
+<hr />
+
+<p style="font-size:20px">
+    <b class="table-header">Запит 4</b>
+</p>
+<p class="table" style="font-size:17px">
+    Знайти Імена усіх фармацевтів, які не належать до заданого зілля.
+</p>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Simple_Query4">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="CountOfPoisons" value="1" />
+            <input type="hidden" asp-for="BirthDate" value="2001" />
+            <div class="form-group">
+                <label class="control-label">Ім'я зілля</label>
+                <select asp-for="PoisonName" asp-items="@ViewBag.PoisonsList" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Знайти" class="btn btn-outline-secondary" />
+            </div>
+        </form>
+    </div>
+</div>
+<hr />
+
+<p style="font-size:20px">
+    <b class="table-header">Запит 5</b>
+</p>
+<p class="table" style="font-size:17px">
+    Знайти усі адреси фармацевтів заданого зілля.
+</p>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Simple_Query5">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="CountOfPoisons" value="1" />
+            <input type="hidden" asp-for="BirthDate" value="2001" />
+            <div class="form-group">
+                <label class="control-label">Ім'я зілля</label>
+                <select asp-for="PoisonName" asp-items="@ViewBag.PoisonsList" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Знайти" class="btn btn-outline-secondary" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Завантажити результат у файл" class="btn btn-outline-secondary" />
+            </div>
+        </form>
+    </div>
+</div>
+<hr />
+<h3 class="top-text>Множинні</h3>
+<hr />
+
+<p style="font-size:20px">
+    <b class="table-header">Запит 1</b>
+</p>
+<p  class="table" style="font-size:17px">
+    Знайти імена усіх травників, які торгують принайсні з тими фармацевтами, що і заданий травник.
+</p>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Mul_Query">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="CountOfPoisons" value="1" />
+            <input type="hidden" asp-for="BirthDate" value="2001" />
+            <div class="form-group">
+                <label class="control-label">Ім'я травника</label>
+                <select asp-for="HerbalistName" asp-items="@ViewBag.HerbalistsList" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Знайти" class="btn btn-outline-secondary" />
+            </div>
+        </form>
+    </div>
+</div>
+<hr />
+
+<p style="font-size:20px">
+    <b class="table-header">Запит 2</b>
+</p>
+<p class="table" style="font-size:17px">
+    Знайти імена фармацевтів, що мають тільки ті й ті зілля, що й заданий фармацевт.
+</p>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Mul_Query2">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="CountOfPoisons" value="1" />
+            <input type="hidden" asp-for="BirthDate" value="2001" />
+            <div class="form-group">
+                <label class="control-label">Ім'я фармацевта</label>
+                <select asp-for="PoisonerName" asp-items="@ViewBag.PoisonersList" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Знайти" class="btn btn-outline-secondary" />
+            </div>
+        </form>
+    </div>
+</div>
+<hr />
+
+<p style="font-size:20px">
+    <b class="table-header">Запит 3</b>
+</p>
+<p class="table" style="font-size:17px">
+    Знайти назви зілля, до яких належать всі фармацевти заданого року народження.
+</p>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Mul_Query3">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="CountOfPoisons" value="1" />
+            <div class="form-group">
+                <label class="control-label">Рік</label>
+                <input asp-for="BirthDate" class="form-control" />
+                <span asp-validation-for="BirthDate" class="text-danger"></span>
+                <span class="text-danger">@ViewBag.Error3</span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Знайти" class="btn btn-outline-secondary" />
+            </div>
+        </form>
+    </div>
+</div>
+<hr />

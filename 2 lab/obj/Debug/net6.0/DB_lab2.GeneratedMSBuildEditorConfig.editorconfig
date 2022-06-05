@@ -1,0 +1,132 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DB_lab2
+build_property.RootNamespace = DB_lab2
+build_property.ProjectDir = C:\Users\User\OneDrive\Рабочий стол\Уник\Proga\DB\DB_lab2\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Users\User\OneDrive\Рабочий стол\Уник\Proga\DB\DB_lab2
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/Addresses/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkcmVzc2VzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/Addresses/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkcmVzc2VzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/Addresses/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkcmVzc2VzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/Addresses/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkcmVzc2VzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/Addresses/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkcmVzc2VzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/Herbalists/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVyYmFsaXN0c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/Herbalists/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVyYmFsaXN0c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/Herbalists/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVyYmFsaXN0c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/Herbalists/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVyYmFsaXN0c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/Herbalists/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVyYmFsaXN0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/Poisoners/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9pc29uZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/Poisoners/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9pc29uZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/Poisoners/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9pc29uZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/Poisoners/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9pc29uZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/Poisoners/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9pc29uZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/Poisons/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9pc29uc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/Poisons/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9pc29uc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/Poisons/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9pc29uc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/Poisons/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9pc29uc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/Poisons/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9pc29uc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/Queries/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlcmllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/Queries/Result.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlcmllc1xSZXN1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/Уник/Proga/DB/DB_lab2/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-oar2tn4t5e
